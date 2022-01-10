@@ -1,18 +1,25 @@
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import { useEffect } from "react";
-import { useDispatch } from "react-redux";
-import { movieAction } from "./redux/action/movieAction";
-import HomePage from "./pages/Default-Role/Home";
-
+import { defaultRounter } from "./configs/router";
+import "antd/dist/antd.css";
 function App() {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch({ type: movieAction.FETCH_DATA_SAGA });
-  }, []);
+  const renderDefaultRouter = () => {
+    return defaultRounter.map(({ path, exact, Component }, index) => {
+      return (
+        <Route
+          key={index}
+          exact={exact}
+          path={path}
+          element={Component}
+        ></Route>
+      );
+    });
+  };
   return (
-    <div className="app__root">
-      <HomePage />
+    <div className="app__roots">
+      <Router>
+        <Routes>{renderDefaultRouter()}</Routes>
+      </Router>
     </div>
   );
 }

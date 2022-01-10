@@ -16,39 +16,27 @@ function Header() {
       <div className="content__container">
         <div className="header__wrapper">
           <div className="header__logo">
-            <Router>
-              <NavLink className="header__link" to="/">
-                <img src={Images.TICKET} alt="logo" />
-              </NavLink>
-            </Router>
+            <NavLink className="header__link" to="/">
+              <img src={Images.TICKET} alt="logo" />
+            </NavLink>
           </div>
           <ul className="header__menu">
             <li>
-              <Router>
-                <NavLink to="/">Trang Chủ</NavLink>
-              </Router>
+              <NavLink to="/">Trang Chủ</NavLink>
             </li>
             <li>
-              <Router>
-                <NavLink to="/">Phim</NavLink>
-              </Router>
+              <NavLink to="/">Phim</NavLink>
             </li>
             <li>
-              <Router>
-                <NavLink to="/">Sự Kiện</NavLink>
-              </Router>
+              <NavLink to="/">Sự Kiện</NavLink>
             </li>
             <li>
-              <Router>
-                <NavLink to="/">Liên Hệ</NavLink>
-              </Router>
+              <NavLink to="/">Liên Hệ</NavLink>
             </li>
             <li>
-              <Router>
-                <NavLink to="/" className="header__join">
-                  Tham Gia
-                </NavLink>
-              </Router>
+              <NavLink to="/" className="header__join">
+                Tham Gia
+              </NavLink>
             </li>
           </ul>
         </div>

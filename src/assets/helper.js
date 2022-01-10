@@ -18,3 +18,8 @@ export const setLocalStorages = (name, value) => {
 export const getLocalStorage = (name) => {
   return JSON.parse(localStorage.getItem(name));
 };
+
+// path
+export const checkPathURL = () => {
+  return window.location.pathname;
+};

@@ -1,0 +1,60 @@
+.fm__certi {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    .fm__certiBox-1 {
+        .fm__certiBox-1-body {
+            padding: 30px;
+            border: none;
+            background-color: #032055;
+            border-radius: 4px;
+            .fm__title {
+                font-size: 18px;
+                font-weight: 600;
+                text-transform: uppercase;
+                border-bottom: 1px solid #1f2b72;
+                padding-bottom: 15px;
+                margin-bottom: 23px;
+                color: white;
+            }
+            .fm__check {
+                .fm__form {
+                    box-align: center;
+                    align-items: center;
+                    margin-bottom: 13px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    input {
+                        width: 14px;
+                        height: 14px;
+                        background: transparent;
+                        border: 1px solid #2d4186;
+                    }
+                    label {
+                        margin: 0;
+                        width: calc(100% - 14px);
+                        padding-left: 10px;
+                        position: relative;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    .fm__certi {
+        flex: 0 0 83.3333333%;
+        max-width: 83.3333333%;
+    }
+}
+@media (min-width: 992px) {
+    .fm__certi {
+        margin-top: 0 !important;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
