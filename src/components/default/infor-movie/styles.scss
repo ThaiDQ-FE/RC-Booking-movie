@@ -1,0 +1,227 @@
+.im__section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .content__container {
+        .im__wrapper {
+            display: flex;
+            flex-wrap: wrap-reverse;
+            margin-bottom: -50px;
+            justify-content: center;
+            margin-left: -15px;
+            margin-right: -15px;
+            .im__left {
+                margin-bottom: 50px;
+
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+                position: relative;
+                .im__offer {
+                    margin-bottom: 30px;
+                    h3 {
+                        font-weight: 600;
+                        text-transform: capitalize;
+                        margin-bottom: 25px;
+                        color: #ffffff;
+                    }
+                    .im__offerBody {
+                        margin-bottom: -30px;
+                        overflow: hidden;
+                        .im__offerItem {
+                            border: 1px dashed #1f3253;
+                            border-radius: 10px;
+                            padding: 20px 20px 28px;
+                            margin-bottom: 30px;
+                            .im__offerThumb {
+                                margin-bottom: 33px;
+                            }
+                            .im__offerContent {
+                                h6 {
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    font-family: "Open Sans", sans-serif;
+                                    margin-bottom: 17px;
+                                    margin-top: -5px;
+                                    a {
+                                        color: #ffffff;
+                                    }
+                                }
+                                p {
+                                    color: #9aace5;
+                                    font-size: 13px;
+                                    line-height: 18px;
+                                    margin: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .im__right {
+                margin-bottom: 50px;
+                .im__detailMovie {
+                    h3 {
+                        text-transform: uppercase;
+                        margin-bottom: 24px;
+                        margin-top: -6px;
+                        font-size: 28px;
+                        color: #ffffff;
+                    }
+                    .im__detailPhotos {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 30px;
+                        img {
+                            flex: 0 0 30%;
+                            border-radius: 6px;
+                            max-width: 30%;
+                        }
+                    }
+                    .im__genneral {
+                        font-size: 18px;
+                        color: #31d7a9;
+                        position: relative;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        &::after {
+                            width: 100%;
+                            top: -12px;
+                            position: absolute;
+                            content: "";
+                            background: #31d7a9;
+                            height: 3px;
+                            left: 0;
+                        }
+                        &::before {
+                            content: "";
+                            background: #31d7a9;
+                            position: absolute;
+                            bottom: -12px;
+                            height: 3px;
+                            left: 0;
+                            width: 100%;
+                        }
+                    }
+                    .im__infor {
+                        margin-top: 40px;
+                        font-size: 16px;
+                        margin-bottom: 40px;
+                    }
+                    .im__cast {
+                        font-size: 18px;
+                        color: #ffffff;
+                        position: relative;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        border-bottom: 1px dashed #11326f;
+                        padding-bottom: 5px;
+                    }
+                    .im__detailCast {
+                        display: flex;
+                        justify-content: space-between;
+                        .im__detailCastItem {
+                            flex: 0 0 22%;
+                            max-width: 100%;
+                            text-align: center;
+                            .im__castThumb {
+                                width: 130px;
+                                height: 130px;
+                                border-radius: 50%;
+                                border: 1px solid rgba(49, 215, 169, 0.5);
+                                margin: 0 auto;
+                                margin-bottom: 30px;
+                                padding: 10px;
+                                img {
+                                    width: 100%;
+                                    border-radius: 50%;
+                                    border: 4px solid #31d7a9;
+                                }
+                            }
+                            .im__castContent {
+                                text-transform: capitalize;
+                                h6 {
+                                    color: #ffffff;
+                                    font-size: 18px;
+                                    font-weight: 600;
+                                    margin-top: -5px;
+                                }
+                                span {
+                                    color: #31d7a9;
+                                    display: block;
+                                    font-size: 14px;
+                                    margin-bottom: 17px;
+                                    line-height: 1.5;
+                                }
+                                p {
+                                    font-size: 14px;
+                                    margin-bottom: 0 !important;
+                                    color: #9aace5;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    .im__section {
+        .content__container {
+            .im__wrapper {
+                .im__left {
+                    flex: 0 0 83.3333%;
+                    max-width: 83.3333%;
+                    .im__offer {
+                        margin-bottom: 40px;
+                        h3 {
+                            font-size: 28px;
+                            margin-top: -9px;
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+                .im__right {
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px) {
+    .im__section {
+        .content__container {
+            .im__wrapper {
+                .im__left {
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+                .im__right {
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .im__section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+        .content__container {
+            .im__wrapper {
+                .im__left {
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                }
+                .im__right {
+                    flex: 0 0 75%;
+                    max-width: 75%;
+                    .im__detailMovie {
+                        .im__detailPhotos {
+                            img {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

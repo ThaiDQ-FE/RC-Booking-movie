@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Pagination } from "antd";
+import { useNavigate } from "react-router-dom";
 import { NavLink, BrowserRouter as Router } from "react-router-dom";
 import { checkPathURL } from "../../../../assets/helper";
 import { Images } from "../../../../assets/images";
 import "./styles.scss";
 import "antd/dist/antd.css";
 function HomeMovieSection(props) {
+  const navigate = useNavigate();
   const [length, setLength] = useState({
     minValue: 0,
     maxValue: 3,
@@ -34,6 +36,9 @@ function HomeMovieSection(props) {
     });
     window.scrollTo(0, 860);
   };
+  const handleClick = (maPhim) => {
+    navigate(`/movie-detail/${maPhim}`);
+  };
   const renderListMovie = () => {
     if (props.listMovie && props.listMovie.length > 0) {
       if (checkPathURL() === "/movie-all") {
@@ -44,15 +49,16 @@ function HomeMovieSection(props) {
               <div className="hm__box" key={index}>
                 <div className="hm__boxGrid">
                   <div className="hm__thumb">
-                    <NavLink className="hm__img" to="/">
+                    <div
+                      className="hm__img"
+                      onClick={() => handleClick(item.maPhim)}
+                    >
                       <img src={item.hinhAnh} alt={item.tenPhim} />
-                    </NavLink>
+                    </div>
                   </div>
                   <div className="hm__content">
                     <h5 className="hm__title">
-                      <NavLink className="hm__titleLink" to="/">
-                        {item.tenPhim}
-                      </NavLink>
+                      <div className="hm__titleLink">{item.tenPhim}</div>
                     </h5>
                     <ul className="hm__rating">
                       <li>
@@ -80,15 +86,13 @@ function HomeMovieSection(props) {
             <div className="hm__box" key={index}>
               <div className="hm__boxGrid">
                 <div className="hm__thumb">
-                  <NavLink className="hm__img" to="/">
+                  <div className="hm__img">
                     <img src={item.hinhAnh} alt={item.tenPhim} />
-                  </NavLink>
+                  </div>
                 </div>
                 <div className="hm__content">
                   <h5 className="hm__title">
-                    <NavLink className="hm__titleLink" to="/">
-                      {item.tenPhim}
-                    </NavLink>
+                    <div className="hm__titleLink">{item.tenPhim}</div>
                   </h5>
                   <ul className="hm__rating">
                     <li>

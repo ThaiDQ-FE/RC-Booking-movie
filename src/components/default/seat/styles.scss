@@ -1,0 +1,240 @@
+.s__section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    .content__container {
+        .s__screenArea {
+            .s__screen {
+                font-size: 28px;
+                margin: 0 auto 40px;
+                position: relative;
+                text-align: center;
+                max-width: 350px;
+                font-weight: 600;
+                text-transform: uppercase;
+                padding: 10px;
+                color: white;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 80%;
+                    top: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 1px;
+                    background: #213a69;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 1px;
+                    background: #213a69;
+                }
+            }
+            .s__screenThumb {
+                width: 100%;
+                max-width: 730px;
+                margin: 0 auto 30px;
+            }
+        }
+        .s__seat {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            .s__seatDefault {
+                mask-image: url(../../../assets/images/seat.png);
+                color: #ffffff;
+                width: 50px;
+                height: 50px;
+                background: #162f5f;
+                position: relative;
+                mask-position: center center;
+                text-align: center;
+                mask-repeat: no-repeat;
+                mask-size: 100% 100%;
+                cursor: pointer;
+                transition: all ease 0.3s;
+                margin: 5px;
+                position: relative;
+                opacity: 0.7;
+                transition: all ease 0.3;
+                &:hover {
+                    background: rgb(199, 183, 57);
+                }
+                span {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    font-weight: 500;
+                }
+                &:nth-child(4) {
+                    margin-left: 10.5%;
+                }
+                &:nth-child(19) {
+                    margin-left: 10.5%;
+                }
+                &:nth-child(34) {
+                    margin-left: 10.5%;
+                }
+                &:nth-child(49) {
+                    margin-left: 10.5%;
+                }
+                &:nth-child(64) {
+                    margin-left: 10.5%;
+                }
+                &:nth-child(79) {
+                    margin-left: 10.5%;
+                }
+                &:nth-child(94) {
+                    margin-left: 10.5%;
+                }
+                &:nth-child(109) {
+                    margin-left: 10.5%;
+                }
+                &:nth-child(124) {
+                    margin-left: 10.5%;
+                }
+                &:nth-child(139) {
+                    margin-left: 10.5%;
+                }
+                //
+                &:nth-child(12) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(27) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(42) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(57) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(72) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(87) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(102) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(117) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(132) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(132) {
+                    margin-right: 10.5%;
+                }
+                &:nth-child(147) {
+                    margin-right: 10.5%;
+                }
+            }
+            .s__daDat {
+                background: red;
+                &:hover {
+                    cursor: no-drop;
+                }
+            }
+            .s__dangChon {
+                background: rgb(48, 216, 48);
+                &:hover {
+                    background: rgb(48, 216, 48);
+                }
+            }
+        }
+        .s__preBook {
+            padding: 32px 40px 32px;
+            position: relative;
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            margin-top: 80px;
+            &::before {
+                background-color: #050068;
+                opacity: 0.8;
+                width: 100%;
+                height: 100%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                position: absolute;
+                content: "";
+            }
+            .s__proBook {
+                display: flex;
+                flex-wrap: wrap;
+                box-pack: justify;
+                justify-content: space-between;
+                box-align: center;
+                align-items: center;
+                margin-bottom: -25px;
+                position: relative;
+                z-index: 1;
+                .s__bookingItem {
+                    margin-bottom: 25px;
+                    width: 30%;
+                    text-align: center;
+                    overflow-wrap: break-word;
+                    word-wrap: break-word;
+                    word-break: break-all;
+                    hyphens: auto;
+                    &:first-child {
+                        text-align: left;
+                    }
+                    &:last-child {
+                        text-align: right;
+                    }
+                    span {
+                        color: white;
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        display: block;
+                        margin-bottom: 14px;
+                    }
+                    h3 {
+                        color: #31d7a9;
+                        text-transform: uppercase;
+                        font-size: 36px;
+                        margin-top: -10px;
+                    }
+                    .s__booking {
+                        padding: 6px 24px;
+                        background-image: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+                        padding: 11px 24px;
+                        font-weight: 600;
+                        color: #ffffff;
+                        text-transform: uppercase;
+                        border-radius: 25px;
+                        display: inline-block;
+                        transition: all ease 0.3;
+                        &:hover {
+                            cursor: pointer;
+                            box-shadow: 0px 10px 15px 0px rgb(59 55 188 / 50%);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 576px) {
+    .s__screen {
+        margin-bottom: 60px !important;
+    }
+    .s__screenThumb {
+        margin-bottom: 60px !important;
+    }
+}
+@media (min-width: 992px) {
+    .s__section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}

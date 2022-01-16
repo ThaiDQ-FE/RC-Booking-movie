@@ -5,6 +5,9 @@ export const movieSlice = createSlice({
   initialState: {
     listOfMovies: {},
     informationOfMovie: {},
+    detailMovie: {},
+    informationShowTimes: {},
+    informationSeat: {},
   },
   reducers: {
     saveListOfMovies: (state, action) => {
@@ -19,7 +22,31 @@ export const movieSlice = createSlice({
         informationOfMovie: action.payload,
       };
     },
+    saveDetailMovie: (state, action) => {
+      return {
+        ...state,
+        detailMovie: action.payload,
+      };
+    },
+    saveInformationShowTimes: (state, action) => {
+      return {
+        ...state,
+        informationShowTimes: action.payload,
+      };
+    },
+    saveInformationSeat: (state, action) => {
+      return {
+        ...state,
+        informationSeat: action.payload,
+      };
+    },
   },
 });
 
-export const { saveListOfMovies, saveInformationOfMovie } = movieSlice.actions;
+export const {
+  saveListOfMovies,
+  saveInformationOfMovie,
+  saveDetailMovie,
+  saveInformationShowTimes,
+  saveInformationSeat,
+} = movieSlice.actions;

@@ -6,8 +6,7 @@ import { Select, Button } from "antd";
 import "antd/dist/antd.css";
 import "./styles.scss";
 import { movieAction } from "../../../redux/action/movieAction";
-import { checkPathURL, setLocalStorages } from "../../../assets/helper";
-import { useEffect } from "react";
+import { setLocalStorages } from "../../../assets/helper";
 function QuickSearch(props) {
   const dispatch = useDispatch();
   const { loading } = useSelector((state) => state.asset);
@@ -19,6 +18,7 @@ function QuickSearch(props) {
   const listName = [];
   const listTime = {};
   const listCinema = [];
+  const listFinalTime = [];
   const [cinema, setCinema] = useState();
   const [count, setCount] = useState(0);
   for (let i = 0; i < props.listMovie.length; i++) {
@@ -48,7 +48,6 @@ function QuickSearch(props) {
     setLocalStorages("time", value);
     setCount(3);
   };
-  console.log(count);
   if (heThongRapChieu) {
     for (let i = 0; i < heThongRapChieu.length; i++) {
       for (let j = 0; j < heThongRapChieu[i].cumRapChieu.length; j++) {
@@ -74,11 +73,15 @@ function QuickSearch(props) {
     if (listCinema) {
       for (const key in listTime) {
         if (key === cinema) {
-          return <Option key={listTime[key]}>{listTime[key]}</Option>;
+          return listTime[key].map((item, index) => {
+            return <Option key={index}>{item}</Option>;
+          });
         }
       }
     }
   };
+  // <Option key={listTime[key]}>{listTime[key]}</Option>
+  console.log(listTime);
 
   return (
     <div className="qs__section padding-top">

@@ -57,6 +57,30 @@
                             }
                         }
                     }
+                    .header__login {
+                        position: relative;
+                        span {
+                            font-size: 16px;
+                            font-weight: 700;
+                            color: #e9eeff;
+                            margin-right: 25px;
+                            color: #31d7a9;
+                        }
+                        img {
+                            position: absolute;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            right: 0;
+                            width: 21px;
+                            height: 21px;
+                            opacity: 0.5;
+                            transition: all ease 0.5s;
+                            &:hover {
+                                cursor: pointer;
+                                opacity: 1;
+                            }
+                        }
+                    }
                 }
             }
         }

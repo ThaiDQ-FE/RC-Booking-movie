@@ -1,0 +1,23 @@
+.loading-cat {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 25;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fcfefc;
+    .loading-cat-gif {
+        background: url(../../assets/images/loading.gif);
+        width: 200px;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

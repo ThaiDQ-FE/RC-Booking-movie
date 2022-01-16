@@ -1,0 +1,94 @@
+.tp__section {
+    margin-bottom: 50px;
+    .content__container {
+        .tp__ul {
+            margin: 0;
+            padding: 0;
+            .tp__li {
+                display: flex;
+                background: #01173f;
+                &:last-child {
+                    .tp__logo {
+                        border-bottom: none;
+                    }
+                    .tp__content {
+                        border-bottom: none;
+                    }
+                }
+                .tp__logo {
+                    flex: 0 0 15%;
+                    max-width: 15%;
+                    text-align: center;
+                    border-right: 1px solid #11326f;
+                    border-bottom: 1px solid #11326f;
+                    padding: 50px 20px;
+                    position: relative;
+                    .tp__logoName {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+                .tp__content {
+                    flex: 0 0 85%;
+                    max-width: 85%;
+                    border-bottom: 1px solid #11326f;
+                    .tp__contentWrapper {
+                        display: flex;
+                        .tp__cinema {
+                            flex: 0 0 25%;
+                            max-width: 25%;
+                            text-align: center;
+                            border-right: 1px solid #11326f;
+                            border-bottom: 1px solid #11326f;
+                            padding: 10px 20px;
+                        }
+                        .tp__time {
+                            flex: 0 0 75%;
+                            max-width: 75%;
+                            padding: 10px 20px;
+                            border-bottom: 1px solid #11326f;
+                            display: flex;
+                            flex-wrap: wrap;
+                            .tp__bookingTime {
+                                mask-image: url(../../../assets/images/movie-seat.png);
+                                color: #ffffff;
+                                padding: 15px;
+                                width: auto;
+                                height: auto;
+                                background: #162f5f;
+                                position: relative;
+                                mask-position: center center;
+                                text-align: center;
+                                mask-repeat: no-repeat;
+                                mask-size: 100% 100%;
+                                cursor: pointer;
+                                transition: all ease 0.3s;
+                                margin: 5px;
+                                &:hover {
+                                    background: #31d7a9;
+                                }
+                            }
+                        }
+                        &:last-child {
+                            .tp__cinema {
+                                border-bottom: none;
+                            }
+                            .tp__time {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

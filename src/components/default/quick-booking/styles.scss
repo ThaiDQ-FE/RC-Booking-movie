@@ -1,0 +1,88 @@
+.qb__section {
+    padding: 35px 0;
+    border-top: 1px solid #17305f;
+    border-bottom: 1px solid #17305f;
+    background-color: #032055;
+    .content__container {
+        .qb__wrapper {
+            box-align: center;
+            align-items: center;
+            box-pack: justify;
+            justify-content: space-between;
+            margin-bottom: -30px;
+            display: flex;
+            flex-wrap: wrap;
+            .qb__side {
+                margin: -10px -15px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                .qb__item {
+                    margin: 10px 15px;
+                    text-align: center;
+                    .qb__itemHeader {
+                        -webkit-box-align: center;
+                        -ms-flex-align: center;
+                        align-items: center;
+                        margin-bottom: 13px;
+                        -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
+                        display: flex;
+                        flex-wrap: wrap;
+                        .qb__thumb {
+                            width: 30px;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            margin-right: 10px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            img {
+                                max-width: 100%;
+                            }
+                        }
+                        .qb__heart {
+                            display: flex;
+                            flex-wrap: wrap;
+                            width: 33%;
+                            margin-left: 10px;
+                            margin-top: 5px;
+                            img {
+                                width: 12px;
+                                height: 12px;
+                            }
+                        }
+                        .qb__counter {
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                    p {
+                        margin-bottom: -8px !important;
+                        font-size: 16px;
+                        color: #dbe2fb;
+                        font-weight: 500;
+                    }
+                }
+            }
+            .qb__booking {
+                margin-bottom: 30px;
+                background-image: linear-gradient(169deg, #5560ff 17%, #aa52a1 63%, #ff4343 100%);
+                padding: 11px 24px;
+                font-weight: 600;
+                color: #ffffff;
+                text-transform: uppercase;
+                border-radius: 25px;
+                display: inline-block;
+                &:hover {
+                    box-shadow: 0px 10px 15px 0px rgb(59 55 188 / 50%);
+                }
+            }
+        }
+    }
+}
+@media (min-width: 992px) {
+    .qb__wrapper {
+        margin-left: 25% !important;
+    }
+}

@@ -19,6 +19,15 @@ export const getLocalStorage = (name) => {
   return JSON.parse(localStorage.getItem(name));
 };
 
+export const getToken = (name) => {
+  const token = getLocalStorage(name).accessToken;
+  return token;
+};
+
+export const removeLocalStorage = (name) => {
+  return localStorage.removeItem(name);
+};
+
 // path
 export const checkPathURL = () => {
   return window.location.pathname;
