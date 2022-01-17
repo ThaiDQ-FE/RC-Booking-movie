@@ -1,0 +1,22 @@
+.mm__ava {
+    img {
+        width: 20px;
+        height: 20px;
+    }
+}
+.mm__over {
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+.mm__button {
+    display: flex;
+    img {
+        &:first-child {
+            margin-right: 10px;
+        }
+        width: 20px;
+        height: 20px;
+    }
+}

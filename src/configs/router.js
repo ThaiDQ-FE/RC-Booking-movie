@@ -1,3 +1,6 @@
+import UserManage from "../components/role/user";
+import MovieManage from "../components/role/movie";
+import AdminRole from "../pages/Admin-Role";
 import CheckOut from "../pages/Default-Role/Check-Out";
 import MovieDetail from "../pages/Default-Role/Detail";
 import HomePage from "../pages/Default-Role/Home";
@@ -41,5 +44,15 @@ export const defaultRounter = [
     path: "thanh-toan",
     exact: true,
     Component: <CheckOut />,
+  },
+  {
+    path: "/admin",
+    exact: true,
+    Component: <AdminRole>{<UserManage />}</AdminRole>,
+  },
+  {
+    path: "/admin/quan-ly-phim",
+    exact: true,
+    Component: <AdminRole>{<MovieManage />}</AdminRole>,
   },
 ];

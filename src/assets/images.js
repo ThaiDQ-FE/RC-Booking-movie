@@ -35,7 +35,13 @@ import power_on from "./images/power-on.png";
 import check from "./images/check.png";
 import paypalOp from "./images/paypalOp.png";
 import card from "./images/card.png";
+import trash from "./images/trash.png";
+import pencil from "./images/pencil.png";
+import plus from "./images/plus.png";
 export const Images = {
+  TRASH: trash,
+  PENCIL: pencil,
+  PLUS: plus,
   CHECK: check,
   CARD: card,
   PAYPALOP: paypalOp,

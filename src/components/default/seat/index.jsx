@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import {
-  getLocalStorage,
-  setLocalStorages,
-  showMessage,
-} from "../../../assets/helper";
+import { getLocalStorage, setLocalStorages } from "../../../assets/helper";
 import { Images } from "../../../assets/images";
 import "./styles.scss";
 function Seat(props) {

@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import { defaultRounter } from "./configs/router";
 import "antd/dist/antd.css";
+import AdminRole from "./pages/Admin-Role";
 function App() {
   const renderDefaultRouter = () => {
     return defaultRounter.map(({ path, exact, Component }, index) => {

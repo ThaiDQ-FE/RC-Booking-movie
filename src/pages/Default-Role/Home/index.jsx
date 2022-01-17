@@ -10,6 +10,7 @@ import { messText } from "../../../assets/mess";
 import { changeStatusLoading } from "../../../redux/slices/assetSlice";
 import Loading from "../../../components/loading";
 import { register } from "../../../redux/sagas/child/userSage";
+import { NavLink, Route } from "react-router-dom";
 function HomePage() {
   const dispatch = useDispatch();
   const { listOfMovies } = useSelector((state) => state.movie);

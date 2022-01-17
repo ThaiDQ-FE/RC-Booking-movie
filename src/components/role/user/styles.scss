@@ -1,0 +1,22 @@
+.um__section {
+    .um__wrapper {
+        padding: 20px 25px 0 25px;
+    }
+}
+.um__plus {
+    text-align: center;
+    img {
+        width: 16px;
+        height: 16px;
+    }
+}
+.um__button {
+    text-align: center;
+    img {
+        width: 16px;
+        height: 16px;
+        &:first-child {
+            margin-right: 10px;
+        }
+    }
+}

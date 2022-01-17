@@ -25,7 +25,11 @@ function Login(props) {
         setLocalStorages("user", data);
         showMessage("success", "Đặng Nhập Thành Công!");
         setTimeout(() => {
-          navigate("/");
+          if (data.maLoaiNguoiDung === "KhachHang") {
+            navigate("/");
+          } else {
+            navigate("/admin");
+          }
         }, 2000);
       })
       .catch((error) => {

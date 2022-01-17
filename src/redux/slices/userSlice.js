@@ -3,6 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 export const userSlice = createSlice({
   name: "user",
   initialState: {
+    listUser: {},
     informationUser: {},
   },
   reducers: {
@@ -12,7 +13,13 @@ export const userSlice = createSlice({
         informationUser: action.payload,
       };
     },
+    saveListUser: (state, action) => {
+      return {
+        ...state,
+        listUser: action.payload,
+      };
+    },
   },
 });
 
-export const { saveInforOfUser } = userSlice.actions;
+export const { saveInforOfUser, saveListUser } = userSlice.actions;
